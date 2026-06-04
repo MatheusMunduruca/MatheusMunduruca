@@ -12,8 +12,11 @@ Acredito que quem entende como o software é construído testa melhor — por is
 - **Testes unitários** — xUnit, Moq, FluentAssertions
 - **Testes de integração** — WebApplicationFactory, Bogus (geração de massa de dados)
 - **Testes de frontend** — Vitest, React Testing Library
+- **Testes BDD** — SpecFlow / Gherkin (cenários em linguagem de negócio)
+- **CI/CD** — GitHub Actions executando build + testes a cada push
+- **DevSecOps (básico)** — proteção de segredos com gitleaks (pre-commit hook)
 - **Práticas** — isolamento de testes, AAA (Arrange-Act-Assert), testes de contrato de API
-- **Estudando** — BDD com SpecFlow/Gherkin, CI com GitHub Actions, fundamentos de teste (ISTQB)
+- **Estudando** — fundamentos de teste (ISTQB)
 
 ##  Desenvolvimento
 
@@ -27,11 +30,13 @@ Acredito que quem entende como o software é construído testa melhor — por is
 
 ##  Projetos em destaque
 
+> Dois back-ends .NET com suíte de testes automatizados e CI verde — qualidade demonstrável, não só prometida.
+
 ###  [Todo API](https://github.com/MatheusMunduruca/todo-api) — *destaque em QA*
 API REST de tarefas em .NET 8 com **42 testes automatizados**: 20 unitários (xUnit + Moq) e 22 de integração (WebApplicationFactory + FluentAssertions + Bogus). JWT, MySQL e Docker.
 
 ###  [E-Commerce API](https://github.com/MatheusMunduruca/ecommerce-api)
-API REST de e-commerce em .NET 8 com regras de negócio reais (controle de estoque, descontos, checkout), Entity Framework Core, Background Service (`IHostedService`) e autenticação JWT compartilhada entre serviços.
+API REST de e-commerce em .NET 8 com **33 testes automatizados** (unitários com xUnit/Moq, integração com WebApplicationFactory e BDD com SpecFlow) e **CI no GitHub Actions**. Inclui regras de negócio (estoque, descontos, checkout), EF Core, Background Service e JWT compartilhado entre serviços.
 
 ###  [Front-ends React](https://github.com/MatheusMunduruca/todo-frontend)
 SPAs em React + Vite consumindo as APIs acima, com testes em Vitest + React Testing Library — formando um ecossistema integrado de aplicações.
